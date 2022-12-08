@@ -1,0 +1,41 @@
+.home__top{
+    &__header{
+        padding: 24px 40px 24px 10px;
+    }
+    &__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    &__title{
+        margin: 0;
+        padding: 0;
+        font-weight: 600;
+        font-size: 28px;
+        line-height:140%;
+    }
+    &__text{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #E0E6E9;
+        margin: 0;
+    }
+}
+.home__input{
+    padding: 14px;
+    width: 220px;
+    outline: none;
+    padding-left: 36px;
+    background: #2D303E;
+    border: 1px solid #393C49;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    color:white;
+    background-image: url("../../assets/img/search.png");
+    background-repeat:no-repeat;
+    background-position: left 14px center;
+}
