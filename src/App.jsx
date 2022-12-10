@@ -11,22 +11,22 @@ function App() {
 		<Sidebar />
 		<div className='app__content'>
 			<Switch>
-				<Route path="/" exact>
+				<Route path="/">
 					<Home/>
 				</Route>
-				<Route path="/discount">
+				<Route path="/discount" exact>
 					/Discount
 				</Route>
-				<Route path="/graph">
+				<Route path="/graph" exact>
 					/Graph
 				</Route>
-				<Route path="/order">
+				<Route path="/order" exact>
 					/Order
 				</Route>
-				<Route path="/notification">
+				<Route path="/notification" exact>
 					/Notification
 				</Route>
-				<Route path="/settings">
+				<Route path="/settings" exact>
 					/Settings
 				</Route>
 			</Switch>

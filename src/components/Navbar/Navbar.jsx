@@ -5,22 +5,22 @@ const Navbar=()=>{
         <div>
             <ul className="nested__link">
                 <li className="nested__link__item">
-                    <NavLink className="nested__link__link" to="/dishes">Hot dishes</NavLink>
+                    <NavLink activeClassName="nested__link__link-active" className="nested__link__link" to="/" exact>Hot dishes</NavLink>
                 </li>
                 <li className="nested__link__item">
-                    <NavLink className="nested__link__link" to="/dishes">Cold Dishes</NavLink>
+                    <NavLink activeClassName="nested__link__link-active" className="nested__link__link" to="/cold-dishes">Cold Dishes</NavLink>
                 </li>
                 <li className="nested__link__item">
-                    <NavLink className="nested__link__link" to="/dishes">Soup</NavLink>
+                    <NavLink activeClassName="nested__link__link-active" className="nested__link__link" to="/soup">Soup</NavLink>
                 </li>
                 <li className="nested__link__item">
-                    <NavLink className="nested__link__link" to="/dishes">Grill</NavLink>
+                    <NavLink activeClassName="nested__link__link-active" className="nested__link__link" to="/grill">Grill</NavLink>
                 </li>
                 <li className="nested__link__item">
-                    <NavLink className="nested__link__link" to="/dishes">Appetizer</NavLink>
+                    <NavLink activeClassName="nested__link__link-active" className="nested__link__link" to="/appetizer">Appetizer</NavLink>
                 </li>
                 <li className="nested__link__item">
-                    <NavLink className="nested__link__link" to="/dishes">Dessert</NavLink>
+                    <NavLink activeClassName="nested__link__link-active" className="nested__link__link" to="/dessert">Dessert</NavLink>
                 </li>
             </ul>
         </div>

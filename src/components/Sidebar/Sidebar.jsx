@@ -4,42 +4,59 @@ import Logo from "../Library/svg/Logo";
 import Menu from "../Library/svg/Menu";
 import Logout from "../Library/svg/Logout";
 const Sidebar= () =>{
+    const handleAddClass=(evt)=>{
+        const links=document.querySelectorAll(".active");
+        links.forEach(link=>{
+            link.classList.remove("active");
+        })
+        evt.currentTarget.classList.add("active")
+    }
     return (
         <div className="sidebar">
             <Link className="logo" to="/"><Logo/></Link>
             <ul className="sidebar__list">
-                <li className="sidebar__item">
-                    <NavLink activeClassName="active" className='sidebar__link' to='/' exact>
+                    <li className="sidebar__item">
+                        <NavLink onClick={handleAddClass} className='sidebar__link active' to='/'>
+                            <span className="sidebar__link-item">
+                                <Menu/>
+                            </span>
+                        </NavLink>
+                    </li>
+                    <li className="sidebar__item">
+                        <NavLink onClick={handleAddClass} className='sidebar__link' to='/discount'  exact>
                         <span className="sidebar__link-item">
                             <Menu/>
                         </span>
-                    </NavLink>
-                    <NavLink className='sidebar__link' to='/discount' activeClassName="active">
-                        <span className="sidebar__link-item">
-                            <Menu/>
-                        </span>
-                    </NavLink>
-                    <NavLink className='sidebar__link' to='/graph' activeClassName="active">
-                        <span className="sidebar__link-item">
-                            <Menu/>
-                        </span>
-                    </NavLink>
-                    <NavLink className='sidebar__link' to='/order' activeClassName="active">
-                        <span className="sidebar__link-item">
-                            <Menu/>
-                        </span>
-                    </NavLink>
-                    <NavLink className='sidebar__link' to='/notification' activeClassName="active">
-                        <span className="sidebar__link-item ">
-                            <Menu/>
-                        </span>
-                    </NavLink>
-                    <NavLink className='sidebar__link' to='/settings' activeClassName="active">
-                        <span className="sidebar__link-item">
-                            <Menu/>
-                        </span>
-                    </NavLink>
-                </li>
+                        </NavLink>
+                    </li>
+                    <li className="sidebar__item">
+                        <NavLink onClick={handleAddClass} className='sidebar__link' to='/graph'  exact>
+                            <span className="sidebar__link-item">
+                                <Menu/>
+                            </span>
+                        </NavLink>
+                    </li>
+                    <li className="sidebar__item">
+                        <NavLink onClick={handleAddClass} className='sidebar__link' to='/order'  exact>
+                            <span className="sidebar__link-item">
+                                <Menu/>
+                            </span>
+                        </NavLink>
+                    </li>
+                    <li className="sidebar__item">
+                        <NavLink onClick={handleAddClass} className='sidebar__link' to='/notification'  exact>
+                            <span className="sidebar__link-item ">
+                                <Menu/>
+                            </span>
+                        </NavLink>
+                    </li>
+                    <li className="sidebar__item">
+                        <NavLink onClick={handleAddClass} className='sidebar__link' to='/settings'  exact>
+                            <span className="sidebar__link-item">
+                                <Menu/>
+                            </span>
+                        </NavLink>
+                    </li>
             </ul>
             <button className="sidebar__button">
                 <Logout />

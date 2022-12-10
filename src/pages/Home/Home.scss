@@ -10,4 +10,47 @@
         min-height: 120vh;
         background-color:yellow;
     }
+    &__middle{
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        padding: 24px 38px 2px 10px;
+
+        &__title{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 140%;
+            color: #FFFFFF;
+        }
+        &__select{
+            background: #1F1D2B;
+            border: 1px solid #393C49;
+            border-radius: 8px;
+            padding: 15px 14px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            padding-left: 44px;
+            line-height: 130%;
+            color: #FFFFFF;
+            outline: none;
+            -webkit-appearance: none;
+            -moze-appearance:none;
+            background-image:url("../../assets/img/arrow-ios-down.svg");
+            background-repeat:no-repeat;
+            cursor: pointer;
+            background-position:left 14px center;
+
+
+            &__option{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 130%;
+                color: #FFFFFF;
+            }
+
+        }
+    }
 }

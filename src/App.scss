@@ -30,6 +30,8 @@ a{
     overflow: hidden;
   }
   body{
+    max-height: 120vh;
+    overflow: hidden;
     font-family: "Barlow","Arial",sans-serif;
     background-color:$main-bg-color;
     color:#fff;

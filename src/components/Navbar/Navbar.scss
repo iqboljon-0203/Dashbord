@@ -1,18 +1,47 @@
+@import '../../assets/scss/colors.scss' ;
 .nested__link{
     width: 95%;
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-    padding-bottom: 13px;
+    margin-left: 10px;
+    margin-right: 38px;
     border-bottom: 1px solid #393C49;
     &__link{
+        position: relative;
+        z-index: 1;
+        display: inline-block;
         color:#fff;
         font-size: 18px;
-        padding: 16px;
+        margin-right: 32px;
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
         line-height: 140%;
+        padding-bottom: 13px;
+
+
+
+        &:hover{
+            color:$primary-color;
+        }
+        &::before{
+            content: "";
+            display: none;
+            top: 97%;
+            border-radius:5px;
+            width: 50%;
+            height: 4px;
+            background-color: $primary-color;
+            position: absolute;
+            z-index: 1;
+        }
+    }
+    &__link-active{
+        color:$primary-color;
+        &::before{
+            display: inline-block;
+        }
     }
 }
