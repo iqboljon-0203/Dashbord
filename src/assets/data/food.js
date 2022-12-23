@@ -4,7 +4,8 @@ const foods=[
         img:"https://picsum.photos/150",
         title:"Osh",
         price:12,
-        available:20
+        available:20,
+        type:"soup",
 
     },
     {
@@ -12,7 +13,8 @@ const foods=[
         img:"https://picsum.photos/150",
         title:"Osh",
         price:12,
-        available:20
+        available:20,
+        type:"soup",
 
     },
     {
@@ -20,7 +22,8 @@ const foods=[
         img:"https://picsum.photos/150",
         title:"Osh",
         price:12,
-        available:20
+        available:20,
+        type:"soup",
 
     },
     {
@@ -28,7 +31,8 @@ const foods=[
         img:"https://picsum.photos/150",
         title:"Osh",
         price:12,
-        available:20
+        available:20,
+        type:"dessert",
 
     },
     {
@@ -36,7 +40,8 @@ const foods=[
         img:"https://picsum.photos/150",
         title:"Osh",
         price:12,
-        available:20
+        available:20,
+        type:"dessert",
 
     },
     {
@@ -44,7 +49,8 @@ const foods=[
         img:"https://picsum.photos/150",
         title:"Osh",
         price:12,
-        available:20
+        available:20,
+        type:"dessert",
 
     },
     {
@@ -52,7 +58,8 @@ const foods=[
         img:"https://picsum.photos/150",
         title:"Osh",
         price:12,
-        available:20
+        available:20,
+        type:"hot-dishes",
 
     },
     {
@@ -60,7 +67,8 @@ const foods=[
         img:"https://picsum.photos/150",
         title:"Osh",
         price:12,
-        available:20
+        available:20,
+        type:"hot-dishes",
 
     },
     {
@@ -68,7 +76,17 @@ const foods=[
         img:"https://picsum.photos/150",
         title:"Osh",
         price:12,
-        available:20
+        available:20,
+        type:"hot-dishes",
+
+    },
+    {
+        id:10,
+        img:"https://picsum.photos/150",
+        title:"Osh",
+        price:12,
+        available:20,
+        type:"cold-dishes",
 
     }
 ]

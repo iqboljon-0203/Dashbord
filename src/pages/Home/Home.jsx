@@ -1,4 +1,5 @@
-import "./Home.scss"
+import "./Home.scss";
+import { Route,Switch } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import Main from "../../components/Main/Main";
 import HomeContent from "../../components/HomeContent/HomeContent";
@@ -19,7 +20,14 @@ const Home=()=>{
                         <option className="home__middle__select__option" value="dignOut">Dign Out</option>
                     </select>
                 </div>
-                <HomeContent/>
+                <Switch>
+                    <Route path="/:dishtype">
+                        <HomeContent/>
+                    </Route>
+                    <Route path="/">
+                        <HomeContent/>
+                    </Route>
+                </Switch>
             </div>
             <div className="home__right">
                 Right
